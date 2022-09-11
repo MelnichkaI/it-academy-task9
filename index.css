@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+}
+
+.grid_container {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header, .main, footer {
+  background-color: #ececec ;
+}
+
+.header_title {
+  text-align: center;
+  padding: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.button {
+  font-size: 25px;
+  color: #ffffff;
+  border: none;
+  background-color: #7fb77e;;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition-duration: 1500ms;
+}
+
+.button:hover {
+color: #000000;
+background-color: #beb000;
+transform:scale(1.2);
+}
+
+.main_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main_item {
+  display: flex;
+  width: 180px;
+  height: 150px;
+  background-color: #702283;
+  color: #ffffff;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 2000ms;
+}
+
+.main_item:hover {
+  transform: rotate(180deg);
+}
+
+.footer {
+  display: flex;
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  background-color: #a2a8d3;
+  border-radius: 50%;
+  animation: ball 7000ms alternate infinite;
+}
+
+.ball:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ball {
+
+  0% {
+background-color: #a2a8d3;
+transform:translate(0px, 0px);
+}
+
+  10% {
+background-color: #f1b963;
+transform:translate(120px, -70px);
+}
+
+  20% {
+background-color: #ffc93c;
+transform:translate(240px, 0px);
+}
+
+  30% {
+background-color: #a2c11c;
+transform:translate(360px, -70px);
+}
+
+  40% {
+background-color: #42b883;
+transform:translate(480px, 0px);
+}
+
+  50% {
+background-color: #007cb9;
+transform:translate(600px, -70px);
+}
+
+  60% {
+background-color: #6643b5;
+transform:translate(720px, 0px);
+}
+
+  70% {
+background-color: #ff6f3c;
+transform:translate(840px, -70px);
+}
+
+  80% {
+background-color: #c24d2c;
+transform:translate(960px, 0px);
+}
+
+  90% {
+background-color: #430f58;
+transform:translate(1080px, -70px);
+}
+
+  100% {
+background-color: #a2a8d3;
+transform:translate(1200px, 0px);
+}
+}
